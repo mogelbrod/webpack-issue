@@ -1,0 +1,14 @@
+diff --git a/webpack.config.js b/webpack.config.js
+index 34e17ce..8bf6b03 100644
+--- a/webpack.config.js
++++ b/webpack.config.js
+@@ -20,6 +20,9 @@ module.exports = function(env) {
+       rules: [
+         {
+           test: /\.js$/,
++          exclude: [
++            /node_modules\/(webpack|html-webpack-plugin)\//,
++          ],
+           loader: 'babel-loader',
+         },
+       ],
