@@ -28,7 +28,6 @@ module.exports = function(env) {
     plugins: [
       new HtmlWebpackPlugin({
         template: 'index.html',
-        inject: 'body',
       }),
     ],
 
